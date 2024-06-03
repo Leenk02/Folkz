@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #334877;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header.navbar .logo img {
+    height: 50px;
+    padding-left: 20px;
+}
+
+header.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-dark {
+    color: #ffffff;
+}
+h1{
+    font-size: 120px;
+}
+.container {
+    display: flex;
+    height: calc(100vh - 72px);
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.camera-icon {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.form-section{
+    margin-left: 100px;
+}
+
+.left{
+    margin-right: 200px;
+}
+
+.box{
+    border-radius: 20px;
+}
+
+
+.options{
+    margin-bottom: 30px;
+}
+
+label {
+    text-align: center;
+    font-weight: bold;
+    color: #00000b;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: #293c75;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #1e2d5c;
+}
+
+.bg-image {
+    width: 80%; height: 111%;
+    display: block;
+    float: right;}
+
+.tilmeld {
+    text-decoration: none;
+}
+
+.box{
+    border-radius: 20px;
+}
+
+.box1{
+    border-radius: 20px;
+    font-size: 15px;
+
+}
+
+.fontsize{
+    font-size: 15px;
+}
+
+@media (max-width: 430px) {
+    .container {
+        width: 100%;
+    }
+    form {
+        flex-direction: column;
+    }
+    .bg-image{
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .form-container {
+            margin: 0 auto; !important;
+            padding: 0; !important;
+    }
+}

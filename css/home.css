@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background-color: #334877;
+    border: none;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo-container img {
+    height: 50px;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #334877;
+}
+
+.content {
+    display: none; /* Skjul indhold */
+}
+
+.content.active {
+    display: block; /* Vis indhold man vil */
+}
+
+.video-box {
+    width: 430px;
+    height: 620px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    width: 430px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.user-box {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-icon {
+    margin: 10px;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    padding: 1px;
+
+}
+
+button:hover {
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 1px;
+}
+
+button:active {
+    background-color: #6da0be;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-followers {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #334877;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    justify-content: space-between;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+
+
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #6da0be;
+}
+
+.footer-icon {
+    margin-right: 3rem;
+}
+
+.footer-icon:last-child {
+    margin-right: 0;
+}
+
+
+@media (max-width: 768px) {
+    header{
+        padding: 10px;
+        margin: 30px;
+    }
+      footer {
+        justify-content: center;
+        width:100%;
+        box-sizing: border-box;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo-container img {
+        height: 40px;
+    }
+
+
+}
+
+
+@media (max-width: 430px) {
+    .logo-container img {
+        height: 30px;
+    }
+    
+    .line {
+        max-width: 420px;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
